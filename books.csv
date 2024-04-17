@@ -1,0 +1,21 @@
+ID,Title,Author,Quantity,Price
+1,Introduction to Python,John Smith,50,29.99
+2,Data Science Essentials,Jane Doe,30,39.99
+3,Algorithm Design,Bob Johnson,20,49.99
+4,Web Development Basics,Emily Williams,35,34.99
+5,Machine Learning Fundamentals,Michael Brown,25,44.99
+6,Introduction to JavaScript,Alex Johnson,40,29.99
+7,Database Management,Sarah Lee,15,54.99
+8,Cybersecurity Essentials,David Garcia,28,49.99
+9,Python for Data Analysis,Michelle Taylor,20,39.99
+10,Artificial Intelligence Principles,Daniel Martinez,22,59.99
+11,Software Engineering Concepts,Andrew Wilson,18,49.99
+12,Deep Learning Basics,Sophia Clark,30,54.99
+13,HTML and CSS Foundations,William Anderson,45,24.99
+14,Network Administration,Liam Moore,20,44.99
+15,Data Visualization Techniques,Ella Thomas,25,34.99
+16,Java Programming Basics,Olivia Brown,35,29.99
+17,Introduction to Cloud Computing,Noah White,28,39.99
+18,Game Development Fundamentals,Isabella Martinez,20,49.99
+19,Statistical Analysis with R,James Johnson,22,44.99
+20,Operating System Principles,Ava Davis,30,54.99
