@@ -29,7 +29,7 @@ def generate_inventory_report(books):
 def calculate_total_inventory_value(books):
     total_value = 0
     for book in books:
-        total_value += book["Quantity"] * book["Price"]
+        total_value += book["quantity"] * book["price"]
     return total_value
 
 
@@ -37,7 +37,7 @@ def calculate_total_inventory_value(books):
 def identify_low_stock_books(books, threshold):
     low_stock_books = []
     for book in books:
-        if book["Quantity"] < threshold:
+        if book["quantity"] < threshold:
             low_stock_books.append(book)
     return low_stock_books
     
@@ -45,7 +45,7 @@ def identify_low_stock_books(books, threshold):
 # Remove a book from the inventory
 def remove_book(books, book_id):
     for book in books:
-        if book["ID"] == book_id:
+        if book["id"] == book_id:
             books.remove(book)
             break
     return books
