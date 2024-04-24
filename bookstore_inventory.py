@@ -37,8 +37,24 @@ def main():
             # Get the details of the new book from the user
             new_title = input("Enter the title of the new book: ")
             new_author = input("Enter the author of the new book: ")
-            new_quantity = input("Enter the quantity of the new book: ")
-            new_price = input("Enter the price of the new book: ")
+            
+            # Get the quantity of the new book from the user
+            while True:
+                new_quantity_input = input("Enter the quantity of the new book: ")
+                if new_quantity_input.isdigit():
+                    new_quantity = int(new_quantity_input)
+                    break
+                else:
+                    print("Invalid input. Please enter a number.")
+            
+            # Get the price of the new book from the user
+            while True:
+                new_price = input("Enter the price of the new book: ")
+                try:
+                    new_price = float(new_price)
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
 
             # Create a string representation of the new book
             new_book = f"{new_id},{new_title},{new_author},{new_quantity},{new_price}"
@@ -250,7 +266,7 @@ def main():
         
 
     # Quit the program
-    elif input_choice == "quit" or input_choice == "q":
+    elif input_choice == "quit" or input_choice == "q" or input_choice == "exit" or input_choice == "e":
         print("Goodbye!")
         return
     
